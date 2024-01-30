@@ -46,13 +46,16 @@ namespace COMP003AL01.Assignment2
             Console.Write($"{integer1} / {integer2} = {integer1 / integer2}");
             Console.WriteLine("\n");
             Console.Write($"{integer1} % {integer2} = {integer1 % integer2}");
-
-
-
-
-
-
-
+            Console.WriteLine("\n");
+            Console.WriteLine("****************************************");
+            Console.WriteLine("Circle Area & Circumference Calculator Section");
+            Console.WriteLine("****************************************");
+            Console.WriteLine("Enter Radius: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            double area = Math.Pow(radius, 2);
+            Console.WriteLine("The Area of the Circle is: " + area);
+            double circumference = 2 * Math.PI * radius;
+            Console.WriteLine("The Circumference of the Circle is " + circumference);
         }
     }
 }
